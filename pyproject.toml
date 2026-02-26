@@ -1,0 +1,13 @@
+[project]
+name = "lab2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cupy-cuda12x>=14.0.1",
+    "matplotlib>=3.10.8",
+    "matplotlib-inline>=0.2.1",
+    "numba>=0.64.0",
+    "nvtx>=0.2.14",
+]
