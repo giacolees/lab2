@@ -265,7 +265,7 @@ def main():
                     help="Skip naive baseline (useful when profiling one config).")
     ap.add_argument("--configs", type=str, default="32x8,32x16,16x16,64x4",
                     help="Comma-separated sweep configs in BXxBY format.")
-    ap.add_argument("--kernel", type=str, default="sharedv2", choices=["naive", "shared", "shared_linear_indexing", "optimized"],
+    ap.add_argument("--kernel", type=str, default="naive", choices=["naive", "shared", "shared_linear_indexing", "optimized"],
                 help="Which kernel to use (for single block profiling).")
 
     args = ap.parse_args()
